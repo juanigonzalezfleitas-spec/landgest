@@ -11,6 +11,13 @@
 
   --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.08);
   --shadow-subtle: 0 6px 18px rgba(0, 0, 0, 0.04);
+
+  /* Escala de tipografía más legible en pantallas chicas */
+  --text-base: 1.125rem;
+  --text-lead: 1.1rem;
+  --text-small: 1rem;
+  --heading-section: 1.85rem;
+  --heading-card: 1.2rem;
 }
 
 *,
@@ -27,8 +34,14 @@ body {
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
+  font-size: var(--text-base);
   background: radial-gradient(circle at top left, #dde7e3, var(--color-bg));
   color: var(--color-brand);
+}
+
+/* Evita que el header fijo tape el título al hacer scroll desde el menú */
+section[id] {
+  scroll-margin-top: 5.25rem;
 }
 
 img {
@@ -86,14 +99,14 @@ a {
 }
 
 .logo-text {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
 }
 
 .main-nav a {
@@ -160,7 +173,7 @@ a {
 }
 
 .hero-copy h1 {
-  font-size: clamp(2.1rem, 3vw, 2.7rem);
+  font-size: clamp(2.25rem, 3.2vw, 2.95rem);
   line-height: 1.15;
   margin: 0 0 1rem;
 }
@@ -168,7 +181,7 @@ a {
 .hero-copy p {
   margin: 0 0 1.4rem;
   color: var(--color-muted);
-  font-size: 0.98rem;
+  font-size: var(--text-lead);
 }
 
 .hero-actions {
@@ -185,7 +198,7 @@ a {
   border-radius: var(--radius-sm);
   border: none;
   cursor: pointer;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   padding: 0.75rem 1.4rem;
   font-weight: 500;
   text-decoration: none;
@@ -235,7 +248,7 @@ a {
 
 .hero-highlight p {
   margin: 0;
-  font-size: 0.82rem;
+  font-size: var(--text-small);
   color: var(--color-brand);
 }
 
@@ -253,7 +266,7 @@ a {
 
 .hero-card h2 {
   margin: 0 0 0.8rem;
-  font-size: 1.15rem;
+  font-size: var(--heading-card);
 }
 
 .hero-card ul {
@@ -261,7 +274,7 @@ a {
   margin: 0;
   padding: 0;
   color: var(--color-muted);
-  font-size: 0.9rem;
+  font-size: var(--text-lead);
 }
 
 .hero-card li {
@@ -281,13 +294,13 @@ a {
   color: var(--color-white);
   padding: 0.85rem 1.1rem;
   border-radius: 16px;
-  font-size: 0.8rem;
+  font-size: var(--text-small);
   box-shadow: var(--shadow-soft);
 }
 
 .hero-badge span {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
 }
 
 .section {
@@ -314,13 +327,13 @@ a {
 
 .section-header h2 {
   margin: 0 0 0.5rem;
-  font-size: 1.6rem;
+  font-size: var(--heading-section);
 }
 
 .section-header p {
   margin: 0;
   color: var(--color-muted);
-  font-size: 0.95rem;
+  font-size: var(--text-lead);
 }
 
 .grid {
@@ -342,13 +355,13 @@ a {
 
 .card h3 {
   margin: 0 0 0.6rem;
-  font-size: 1.08rem;
+  font-size: var(--heading-card);
 }
 
 .card p {
   margin: 0;
   color: var(--color-muted);
-  font-size: 0.9rem;
+  font-size: var(--text-lead);
 }
 
 .legales-layout {
@@ -373,7 +386,7 @@ a {
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(119, 136, 153, 0.25);
   box-shadow: var(--shadow-subtle);
-  font-size: 0.9rem;
+  font-size: var(--text-lead);
   color: var(--color-muted);
 }
 
@@ -387,7 +400,7 @@ a {
   padding: 1.5rem 1.4rem;
   border-radius: 20px;
   box-shadow: var(--shadow-soft);
-  font-size: 0.9rem;
+  font-size: var(--text-lead);
 }
 
 .legales-panel h3 {
@@ -396,7 +409,7 @@ a {
 
 .legales-panel .note {
   margin-top: 0.9rem;
-  font-size: 0.8rem;
+  font-size: var(--text-small);
   opacity: 0.9;
 }
 
@@ -406,10 +419,30 @@ a {
   gap: 1.8rem;
 }
 
-.about-text p {
-  margin: 0 0 0.8rem;
+.about-subtitle {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  color: var(--color-brand);
+}
+
+.about-diffs {
+  margin: 0;
+  padding-left: 1.25rem;
   color: var(--color-muted);
-  font-size: 0.95rem;
+  font-size: var(--text-lead);
+  line-height: 1.5;
+}
+
+.about-diffs li {
+  margin-bottom: 0.75rem;
+}
+
+.about-diffs li:last-child {
+  margin-bottom: 0;
+}
+
+.about-diffs strong {
+  color: var(--color-brand);
 }
 
 .about-highlight {
@@ -420,11 +453,11 @@ a {
   box-shadow: var(--shadow-subtle);
 }
 
-.about-highlight ul {
+.about-tagline {
   margin: 0;
-  padding-left: 1.1rem;
+  font-size: var(--text-lead);
   color: var(--color-brand);
-  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .contact-layout {
@@ -448,7 +481,7 @@ a {
 .field label {
   display: block;
   margin-bottom: 0.25rem;
-  font-size: 0.88rem;
+  font-size: var(--text-small);
   color: var(--color-brand);
 }
 
@@ -460,7 +493,7 @@ a {
   border-radius: 10px;
   border: 1px solid rgba(119, 136, 153, 0.45);
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: var(--text-lead);
   background: rgba(248, 249, 250, 0.9);
   outline: none;
 }
@@ -475,12 +508,12 @@ a {
 
 .form-note {
   margin: 0.8rem 0 0;
-  font-size: 0.78rem;
+  font-size: var(--text-small);
   color: var(--color-muted);
 }
 
 .contact-info {
-  font-size: 0.9rem;
+  font-size: var(--text-lead);
   color: var(--color-brand);
 }
 
@@ -512,7 +545,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: var(--text-small);
   color: var(--color-muted);
 }
 
@@ -544,6 +577,10 @@ a {
 @media (max-width: 720px) {
   .header-inner {
     height: 64px;
+  }
+
+  section[id] {
+    scroll-margin-top: 4.75rem;
   }
 
   .main-nav {
