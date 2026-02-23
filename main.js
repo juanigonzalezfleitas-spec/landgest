@@ -19,15 +19,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const form = document.querySelector(".contact-form");
-  if (form) {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      alert(
-        "Tu consulta fue registrada de forma local.\nConfigura el envío real (email / backend) cuando lo desees."
-      );
-      form.reset();
-    });
-  }
 });
 
