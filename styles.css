@@ -56,8 +56,10 @@ a {
 
 .container {
   max-width: 1120px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
+  box-sizing: border-box;
 }
 
 .site-header {
@@ -278,6 +280,8 @@ a {
 
 .section {
   padding: 3.5rem 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .section-alt {
@@ -291,12 +295,17 @@ a {
 .section-compliance {
   background-color: #eef1f0;
   padding: 4rem 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .compliance-inner {
   max-width: 720px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 1.5rem;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .compliance-title {
@@ -310,6 +319,7 @@ a {
   font-size: var(--text-lead);
   color: var(--color-muted);
   line-height: 1.6;
+  overflow-wrap: break-word;
 }
 
 .section-contact {
@@ -347,20 +357,25 @@ a {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
   align-items: start;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .service-block {
+  min-width: 0;
   background: rgba(248, 249, 250, 0.96);
   border-radius: var(--radius-lg);
   padding: 1.6rem 1.5rem;
   border: 1px solid rgba(119, 136, 153, 0.25);
   box-shadow: var(--shadow-subtle);
+  box-sizing: border-box;
 }
 
 .service-block h3 {
   margin: 0 0 1rem;
   font-size: var(--heading-card);
   color: var(--color-brand);
+  overflow-wrap: break-word;
 }
 
 .service-block ul {
@@ -369,6 +384,7 @@ a {
   color: var(--color-muted);
   font-size: var(--text-lead);
   line-height: 1.55;
+  overflow-wrap: break-word;
 }
 
 .service-block li {
