@@ -57,19 +57,21 @@
           </div>
         </div>
         <div class="hero-panel">
-          <div class="hero-card">
-            <h2>Principales trámites</h2>
-            <ul>
-              <li>Transferencias de vehículos nuevos y usados</li>
-              <li>Altas y bajas de motor o chasis</li>
-              <li>Informes de dominio e infracciones</li>
-              <li>Asesoramiento en contratos y documentación</li>
-            </ul>
-          </div>
-          <div class="hero-badge">
-            <span>+10 años</span>
-            <p>de experiencia en gestión automotriz</p>
-          </div>
+          <figure class="hero-figure">
+            <img src="images/imagen-pag.jpg" alt="Nexo 360 - Gestoría técnica automotriz" class="hero-image" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEPARADOR: IMPORTANCIA DEL CUMPLIMIENTO -->
+    <section class="section section-compliance">
+      <div class="container">
+        <div class="compliance-inner">
+          <h2 class="compliance-title">La normativa actual exige precisión</h2>
+          <p class="compliance-text">
+            Importar autopartes de seguridad requiere un control técnico riguroso. En Nexo 360 nos encargamos de los ensayos y certificaciones para piezas sin respaldo internacional, asegurando que cumpla con todos los estándares vigentes antes de llegar al mercado.
+          </p>
         </div>
       </div>
     </section>
@@ -80,31 +82,25 @@
         <header class="section-header">
           <h2>Servicios brindados</h2>
           <p>
-            Acompañamos a concesionarias, empresas y particulares en todos sus trámites vinculados
-            al parque automotor.
+            Ofrecemos gestión de certificaciones para autopartes de seguridad y trazabilidad digital mediante sistema QR, con interfaz de auditoría en tiempo real.
           </p>
         </header>
-        <div class="grid grid-3">
-          <article class="card">
-            <h3>Transferencias y altas</h3>
-            <p>
-              Gestión completa de transferencias, inscripciones iniciales y altas de vehículos
-              para particulares y flotas corporativas.
-            </p>
+        <div class="services-blocks">
+          <article class="service-block">
+            <h3>Gestión de Certificaciones</h3>
+            <ul>
+              <li>Asesoramiento integral para autopartes de seguridad importadas.</li>
+              <li>Validación de certificaciones internacionales admitidas por la normativa vigente.</li>
+              <li>Gestión completa de ensayos y certificación local para piezas que no posean certificados internacionales de origen.</li>
+            </ul>
           </article>
-          <article class="card">
-            <h3>Informes y regularización</h3>
-            <p>
-              Informes de dominio, estado de deuda, infracciones y seguimiento de expedientes
-              hasta su resolución.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Asesoramiento normativo</h3>
-            <p>
-              Análisis de casos, revisión documental y acompañamiento frente a cambios en la
-              normativa automotriz.
-            </p>
+          <article class="service-block">
+            <h3>Trazabilidad Digital (Sistema QR)</h3>
+            <ul>
+              <li>Generación de «Hoja de Vida» digital para cada componente.</li>
+              <li>Asignación de un identificador único mediante códigos QR vinculados a servidor.</li>
+              <li>Interfaz de auditoría para visualización de datos en tiempo real.</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -154,29 +150,20 @@
     <!-- QUIÉNES SOMOS -->
     <section id="nosotros" class="section">
       <div class="container">
-        <header class="section-header">
-          <h2>Quiénes somos</h2>
-          <p>
-            Un equipo multidisciplinario enfocado en brindar soluciones de cumplimiento para la industria automotriz. Nos especializamos en la certificación de autopartes de seguridad y en la creación de ecosistemas digitales (QR) para el mantenimiento de información auditable.
-          </p>
-        </header>
-        <div class="about-layout">
-          <div class="about-text">
-            <h3 class="about-subtitle">¿Qué nos diferencia?</h3>
-            <ul class="about-diffs">
-              <li>
-                <strong>Experiencia Técnica:</strong> Sabemos qué se audita y cómo cumplirlo desde la ingeniería.
-              </li>
-              <li>
-                <strong>Innovación:</strong> Automatizamos la gestión de datos para reducir tiempos de respuesta.
-              </li>
-              <li>
-                <strong>Compromiso:</strong> Acompañamos a empresas de logística y particulares en cada etapa de la importación.
-              </li>
-            </ul>
+        <div class="about-inner">
+          <div class="about-copy">
+            <h2 class="about-title">Quiénes somos</h2>
+            <p class="about-text">
+              Un equipo liderado por profesionales de la ingeniería mecánica y la auditoría técnica. Combinamos años de experiencia en procesos de homologación con herramientas digitales para garantizar que el cumplimiento normativo sea una ventaja competitiva para nuestros clientes. Trabajamos con importadores y empresas del rubro autopartista que buscan seguridad jurídica y eficiencia operativa.
+            </p>
+            <div class="about-highlight">
+              <p class="about-tagline">Cumplimiento normativo y trazabilidad como ventaja competitiva.</p>
+            </div>
           </div>
-          <div class="about-highlight">
-            <p class="about-tagline">Soluciones de cumplimiento y trazabilidad para el sector automotriz.</p>
+          <div class="about-panel">
+            <figure class="about-figure">
+              <img src="images/imagen2.jpg" alt="Nexo 360 - Equipo y experiencia en gestoría técnica" class="about-image" />
+            </figure>
           </div>
         </div>
       </div>
@@ -207,9 +194,9 @@
             <div class="field">
               <label for="tipo">Tipo de consulta</label>
               <select id="tipo" name="tipo">
-                <option value="transferencia">Transferencia / compra-venta</option>
-                <option value="empresa">Flota / empresa</option>
-                <option value="informes">Informes y regularización</option>
+                <option value="certificaciones">Gestión de Certificaciones</option>
+                <option value="trazabilidad-qr">Trazabilidad Digital (Sistema QR)</option>
+                <option value="ambos">Ambos servicios / Consulta general</option>
                 <option value="otro">Otro</option>
               </select>
             </div>
